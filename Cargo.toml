@@ -1,0 +1,14 @@
+[package]
+name = "keyout-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+evdev = "0.12"          # świetny crate do evdev
+uinput = "0.1"          # albo nix::ioctl_write_ptr etc.
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+clap = { version = "4.0", features = ["derive"] }
+log = "0.4"
+simplelog = "0.12"
+nix = "0.28"            # do fork/daemonize
